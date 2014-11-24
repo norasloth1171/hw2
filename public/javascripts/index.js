@@ -95,5 +95,15 @@ deleteUl.on('sortreceive', function(e, ui){
 
 // [TODO] 回家作業
 // 完成項目
-
-}());
+doneUl.on('sortreceive', function(event,ui)){
+  ui.item.addClass('is-done').appendTo(mainUl);
+  mainUl.find(li).each(function()){
+    var is-done $(this0.find('span').text;
+      if ($(this).hasClass('is-done'))){
+        is-done=true}
+        else{
+          is-done=false
+        }
+  }
+}
+;
